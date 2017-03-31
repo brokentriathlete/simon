@@ -1,0 +1,9 @@
+Add modes. (Add nicer background, displaying what each mode means.)
+
+Easy - win at 10 moves
+Medium - win at 15 moves
+Hard - win at 20 moves
+Difficult - win at 20, buttons all black unless pressed?
+Very Hard - win at 20, buttons (not black) press different colours, and you need to press the correct colours in playback, NOT the buttons CPU pressed
+
+Open - no limit, add a tracker for best length user has done
