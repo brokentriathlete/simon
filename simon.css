@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  background: gray;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 90px 0;
+}
+
+#game-console {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: black;
+}
+
+#game-interior {
+  background: black;
+  border-radius: 50%;
+  width: 370px;
+  height: 370px;
+  padding: 17px;
+}
+
+#green-button {
+  float: left;
+  background: green;
+  height: 175px;
+  width: 175px;
+  border-radius: 175px 0 0 0;
+  border-right: 10px black solid;
+  border-bottom: 10px black solid;
+  cursor: default;
+}
+
+#red-button {
+  background: #9F0F17;
+  height: 175px;
+  width: 175px;
+  border-radius: 0 175px 0 0;
+  float: right;
+  border-left: 10px black solid;
+  border-bottom: 10px black solid;
+  cursor: default;
+}
+
+#blue-button {
+  float: right;
+  background: #094A8F;
+  height: 175px;
+  width: 175px;
+  border-radius: 0 0 175px 0;
+  border-left: 10px black solid;
+  border-top: 10px black solid;
+  cursor: default;
+}
+
+#yellow-button {
+  float: left;
+  background: #CCA707;
+  height: 175px;
+  width: 175px;
+  border-radius: 0 0 0 175px;
+  border-right: 10px black solid;
+  border-top: 10px black solid;
+  cursor: default;
+}
+
+#game-controls {
+  margin: auto;
+  background: white;
+  border-radius: 50%;
+  margin: 75px;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  border: 10px black solid;
+}
+
+#game-name {
+  font-size: 200%;
+  font-weight: bold;
+  width: 125px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#count-start-strict {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 75%;
+}
+
+table {
+  border-spacing: 5px;
+}
+
+#score-display {
+  font-size: 200%;
+  width: 20px;
+  height: 29px;
+  border: 2px gray solid;
+  border-radius: 5px;
+  background: black;
+  color: red;
+  padding-top: 3px;
+  padding-left: 15px;
+}
+
+#start-button {
+  background: red;
+  border-radius: 50%;
+  border: 4px gray solid;
+  height: 15px;
+  width: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 2px 2px 15px #888888;
+}
+
+#strict-button {
+  background: yellow;
+  border-radius: 50%;
+  border: 4px gray solid;
+  height: 15px;
+  width: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 1px;
+  color: yellow;
+  font-weight: bold;
+  box-shadow: 2px 2px 15px #888888;
+}
+
+#power-switch {
+  padding-top: 20px;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 75%;
+}
+
+#power-button{
+  display: inline-block;
+  width: 20px;
+  height: 6px;
+  background: linear-gradient(90deg, lightBlue 50%, black 50%);
+  border: 2px black solid;
+  cursor: pointer;
+}
+
+.footer {
+  color: white;
+  background: gray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5px;
+  z-index: 2;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* do not allow text highlighting, as it looks terrible on game console */
+div {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
